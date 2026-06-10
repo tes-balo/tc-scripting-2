@@ -24,7 +24,7 @@ Management says: *“This process is wasting time. Automate it.”*
 
 ---
 
-![Screenshot of execution of script](screenshot.png)
+![Screenshot of execution of script](./screenshots/screenshot.png)
 
 ### Task 2
 
@@ -39,9 +39,9 @@ Create a Bash script that:
 
 #### Solution
 
-![Script execution screenshot 1](image-2.png)
-![Script execution screenshot 2](image-1.png)
-![Script execution screenshot 3](image.png)
+![Script execution screenshot 1](./screenshots/image-2.png)
+![Script execution screenshot 2](./screenshots/image-1.png)
+![Script execution screenshot 3](./screenshots/image.png)
 
 ---
 
@@ -89,7 +89,7 @@ For starters, stick with this format for naming groups/resources: `<app>-<env>-r
 
 **Separate multiple flags onto their own lines:** This improves readability of long commands in a script. For example:
 
-```sh
+```bash
 az group create -n "${name_start}-${letter}-${name_end}" \
     -l "southafricanorth" \
     --tags env=dev owner=balogun \
@@ -98,6 +98,6 @@ az group create -n "${name_start}-${letter}-${name_end}" \
 
 reads much better than:
 
-```sh
+```bash
 az group create -n "${name_start}-${letter}-${name_end}" -l "southafricanorth" --tags env=dev owner=balogun --output table
 ```
