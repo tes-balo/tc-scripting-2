@@ -76,16 +76,16 @@ e.g. `acme-payments-prod-southafricanorth-rg`
 #### Best Practices
 
 **Use lowercase only:** Azure supports uppercase, but it's recommended to prefer lowercase when naming resources and resource groups, with dashes (`-`) as separators.
-✔ payment-api-prod-rg
-❌ Payment-API-Prod-RG
-✔ payment-api-prod-vm
-❌ payment-api-prod-storage
+* ✔ payment-api-prod-rg
+* ❌ Payment-API-Prod-RG
+* ✔ payment-api-prod-vm
+* ❌ payment-api-prod-storage
 
 **Always include the environment in the resource/group name:** Omitting the environment name can lead to confusion in production, where there could be many resources and groups each belonging to different environments.
-✔ payment-api-dev-rg
-✔ payment-api-staging-rg
-✔ payment-api-prod-rg
-❌ payment-api-rg
+* ✔ payment-api-dev-rg
+* ✔ payment-api-staging-rg
+* ✔ payment-api-prod-rg
+* ❌ payment-api-rg
 
 For starters, stick with this format for naming groups/resources: `<app>-<env>-rg`
 
